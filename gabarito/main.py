@@ -48,7 +48,7 @@ tabela = pandas.read_csv("produtos.csv")
 # passo 4: cadastrar 1 produto
 
 for i in tabela.index: #forzinho pra executar cada linha da tabela / o .index pega cada linha da tabela
-    pyautogui.click(x=270, y=295)
+    pyautogui.click(x=725, y=293)
 
     codigo = tabela.loc[i, "codigo"] # o .loc localiza o produto na sua categoria
     pyautogui.write(codigo)
@@ -75,7 +75,6 @@ for i in tabela.index: #forzinho pra executar cada linha da tabela / o .index pe
 
     pyautogui.press("tab")
     obs = str(tabela.loc[i, "obs"])
-    
     if obs != "nan":
         pyautogui.write(obs)
 
