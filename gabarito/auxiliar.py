@@ -12,3 +12,5 @@ print(pyautogui.position())
 # Point(x=735, y=504) da senha
 
 # Point(x=966, y=567) do login
+
+# Point(x=270, y=295) primeiro cadastro de produto
